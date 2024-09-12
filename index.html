@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleep Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+
+    <h1 class="heading">Want to track your<br>Sleep?</h1>
+
+    <div class="box-cont">
+        <div class="header">
+            <div class="title">Sleep tracker</div>
+            <div class="calendar-container">
+              <input type="text" id="calendar-input" class="calendar-input" placeholder="Select date">
+          </div>
+        </div>
+   
+        <div class="container">
+    <div class="input-container">
+        <div class="input-box">
+            <label for="sleep-time">Sleep Time:</label>
+            <input type="time" id="sleep-time">
+        </div>
+        <div class="input-box">
+            <label for="wake-up-time">Wake Up Time:</label>
+            <input type="time" id="wake-up-time">
+        </div>
+    </div>
+    <button class="calculate-button" onclick="calculateSleep()">Calculate Sleep</button>
+    <div class="circle">
+        <span id="sleep-hours">0h 0m</span>
+    </div>
+    <div class="result-box" id="result-box">
+        <h2 id="result-title"></h2>
+        <p id="result-message"></p>
+    </div>
+</div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+</html>
